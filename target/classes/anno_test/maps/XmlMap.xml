@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace :  -->
+<!-- 쿼리 저장 -->
+<mapper namespace="anno_test.maps.XmlMap">
+	<select id="getListXml" resultType="hashmap">
+	select * from xml_test
+	</select>
+	<insert id="join" >
+	insert into xml_test VALUES(#{t_id},#{t_name})
+	</insert>
+	<delete id="delete" >
+	delete from xml_test where t_id=#{t_id}
+	</delete>
+	<insert id="join2">
+	call xml_insert(#{t_id},#{t_name})
+	</insert>
+	<update id="update">
+	update xml_test set T_NAME='변경완료' where T_ID=#{t_id}
+	</update>
+</mapper>

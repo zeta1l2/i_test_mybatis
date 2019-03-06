@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace :  -->
+<!-- 쿼리 저장 -->
+<mapper namespace="anno_test.maps.AnnoMap">
+	<select id="getListXml" resultType="hashmap">
+	SELECT * FROM spr_test2 ORDER BY S_NUM DESC
+	</select>
+</mapper>
