@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-으아아아아
+서버에서 변경 완료!
 </body>
 </html>
